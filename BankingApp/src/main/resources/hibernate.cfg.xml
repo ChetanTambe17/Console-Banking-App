@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM "hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3307/bank_db</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+
+		<!-- HIBERNATE CONFIGURATION -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">false</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+
+		<mapping class="com.BankingApp.Entities.Customer" />
+		<mapping class="com.BankingApp.Entities.Account" />
+		<mapping class="com.BankingApp.Entities.Transactions" />
+
+
+
+	</session-factory>
+</hibernate-configuration>
