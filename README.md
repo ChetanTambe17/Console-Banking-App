@@ -20,4 +20,3 @@ It simulates real-world core banking operations like account creation, deposits,
 ---
 
 ## 🖥️ Console Menu
-
